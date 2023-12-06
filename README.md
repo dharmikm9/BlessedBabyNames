@@ -25,3 +25,8 @@ Baby Name Suggester is an application that leverages Python, OpenAI, Langchain, 
 1. Clone the repository:
    ```bash
    git clone https://github.com/dharmikm9/BlessedBabyNames.git
+
+
+## Website Demo
+
+![Project Image](https://raw.githubusercontent.com/dharmikm9/BlessedBabyNames/master/website_demo/Screenshot%202023-12-05%20180004.png)
