@@ -6,7 +6,7 @@ import streamlit as st
 import os
 from secret_key import openapi_key
 
-if openapi_key == None:
+if openapi_key == "":
     print("NO API KEY FOUND... ADDING though Streamlit Secret")
     openapi_key = st.secrets["openapi_key"]
     print(openapi_key[:6])
