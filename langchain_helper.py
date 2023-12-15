@@ -19,7 +19,7 @@ def generate_baby_names(lord_name):
 
     prompt_template_name = PromptTemplate(
         input_variables=['lord_name'],
-        template="I want to name a baby which inspired with a character of lord {lord_name} . Suggest some similar indian aesthetic and religious names for this in a comma seperatded."
+        template="Please offer names inspired by Hindu God or Goddess {lord_name}, reflecting various characteristics and attributes associated with them. I'm looking for Indian names that hold religious and aesthetic significance in Hindu culture. Kindly provide 50-100 names in a comma-separated list."
     )
     p = prompt_template_name.format(lord_name=lord_name)
     print(p)
