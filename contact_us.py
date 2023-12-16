@@ -9,10 +9,11 @@ def contactus_page():
     with col1:
         st.header("Meet the Developer")
         st.write("""
-            Hello! I'm Dharmik, a passionate developer interested in Machine Learning & ML.
+            Hello! I'm Dharmik, a passionate developer interested in Machine Learning & NLP.
             Feel free to connect with me through the following social media platforms:
+            
             """)
-        
+        st.write("")
         soc_col1, soc_col2 = st.columns([1, 3])
 
         # with soc_col1:
