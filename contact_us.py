@@ -6,7 +6,7 @@ def contactus_page():
 
 
 
-    col1, col2 = st.columns([1, 3])
+    col1, col2 = st.columns([0.7, 0.3])
 
     with col1:
         # st.image("https://kit8.net/wp-content/uploads/edd/2022/04/robots_and_humans_communication_preview.jpg",
