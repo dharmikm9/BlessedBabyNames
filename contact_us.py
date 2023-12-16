@@ -6,7 +6,7 @@ def contactus_page():
 
 
 
-    col1, col2 = st.columns([0.7, 0.3])
+    col1, col2 = st.columns([0.6, 0.4])
 
     with col1:
         # st.image("https://kit8.net/wp-content/uploads/edd/2022/04/robots_and_humans_communication_preview.jpg",
@@ -27,10 +27,10 @@ def contactus_page():
         
         soc_col1, soc_col2 = st.columns([1, 3])
 
-        with soc_col1:
-            st.markdown(
-                "[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/dharmikm9)"
-            )
+        # with soc_col1:
+        #     st.markdown(
+        #         "[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/dharmikm9)"
+        #     )
         with soc_col2:
             st.markdown(
                 "[![GitHub](https://img.shields.io/badge/GitHub-Profile-lightgrey)](https://github.com/dharmikm9)"
