@@ -13,8 +13,8 @@ def contactus_page():
                  # width=200)  # Replace with your image URL
         components.html("""
          <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
-         <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="dharmikm9" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/dharmikm9?trk=profile-badge">Dharmik Mehta</a></div>
-        """, height=400)
+         <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="dharmikm9" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/dharmikm9?trk=profile-badge"></a></div>
+        """, width=300, height=400)
         
     with col2:
         st.header("Meet the Developer")
