@@ -16,7 +16,12 @@ def contactus_page():
             Hello! I'm Dharmik, a passionate developer interested in Machine Learning & ML.
             Feel free to connect with me through the following social media platforms:
             """)
-
+        
+        components.html("""
+         <script src="https://platform.linkedin.com/badges/js/profile.js" async defer type="text/javascript"></script>
+         <div class="badge-base LI-profile-badge" data-locale="en_US" data-size="large" data-theme="light" data-type="VERTICAL" data-vanity="dharmikm9" data-version="v1"><a class="badge-base__link LI-simple-link" href="https://in.linkedin.com/in/dharmikm9?trk=profile-badge">Dharmik Mehta</a></div>
+        """, )
+        
         soc_col1, soc_col2 = st.columns([1, 3])
 
         with soc_col1:
