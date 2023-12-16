@@ -23,7 +23,7 @@ def contactus_page():
             st.markdown(
                 "[![GitHub](https://img.shields.io/badge/GitHub-Profile-lightgrey)](https://github.com/dharmikm9)"
             )
-   with col2:
+    with col2:
         # st.image("https://kit8.net/wp-content/uploads/edd/2022/04/robots_and_humans_communication_preview.jpg",
                  # width=200)  # Replace with your image URL
         components.html("""
