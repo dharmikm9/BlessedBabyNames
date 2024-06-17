@@ -3,3 +3,5 @@ langchain
 google-search-results
 streamlit
 streamlit_option_menu
+langchain-community
+langchain-core
