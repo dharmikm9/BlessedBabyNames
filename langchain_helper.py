@@ -32,4 +32,4 @@ def generate_baby_names(lord_name):
     return response
 
 if __name__ == "__main__":
-    print(generate_baby_names("Italian"))
+    print(generate_baby_names("Shiva"))
