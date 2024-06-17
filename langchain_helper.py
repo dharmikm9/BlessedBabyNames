@@ -27,8 +27,6 @@ def generate_baby_names(lord_name):
     chain = LLMChain(llm=llm, prompt=prompt_template_name)
     response = chain.run(lord_name)
 
-    # response = "dharmik, ABC, XYZ, MNO"
-
     return response
 
 if __name__ == "__main__":
