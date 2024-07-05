@@ -14,22 +14,28 @@ def name_page():
     selected_option = st.selectbox("Deity Selection:", options=options, help=pickup_tooltip, index=0)
     if selected_option != 'Choose an option':
         lord_name = selected_option
-        response = langchain_helper.generate_baby_names(lord_name)
-        st.write("***Here are a few baby names curated by AI for your consideration.***")
-        baby_names = response.strip().split(",")
-        st.write("**Baby Names**")
+        response = None
+        try:
+            response = langchain_helper.generate_baby_names(lord_name)
+        except requests.exceptions.RequestException as e:
+            st.error('Failed to retrieve Babynames. There was an issue processing your request. Please try again later.')
 
-        num_columns = 3  # Number of columns for responsiveness
-        chunk_size = len(baby_names) // num_columns if len(baby_names) % num_columns == 0 else len(
-            baby_names) // num_columns + 1
-
-        cols = st.columns(num_columns)
-
-        for i in range(num_columns):
-            with cols[i]:
-                sub_name_lst = baby_names[i * chunk_size: (i + 1) * chunk_size]
-                for name in sub_name_lst:
-                        st.write("+", name)
+        if response:
+            st.write("***Here are a few baby names curated by AI for your consideration.***")
+            baby_names = response.strip().split(",")
+            st.write("**Baby Names**")
+    
+            num_columns = 3  # Number of columns for responsiveness
+            chunk_size = len(baby_names) // num_columns if len(baby_names) % num_columns == 0 else len(
+                baby_names) // num_columns + 1
+    
+            cols = st.columns(num_columns)
+    
+            for i in range(num_columns):
+                with cols[i]:
+                    sub_name_lst = baby_names[i * chunk_size: (i + 1) * chunk_size]
+                    for name in sub_name_lst:
+                            st.write("+", name)
 
 
 
