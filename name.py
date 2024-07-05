@@ -17,7 +17,7 @@ def name_page():
         response = None
         try:
             response = langchain_helper.generate_baby_names(lord_name)
-        except requests.exceptions.RequestException as e:
+        except Exception as e:
             st.error('Failed to retrieve Babynames. There was an issue processing your request. Please try again later.')
 
         if response:
